@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-black text-white sticky top-0 z-50">
-      <div className="w-full flex items-center justify-between px-6 py-4">
+      <div className="w-full flex items-center justify-between px-6 md:px-12 py-4">
         {/* Logo */}
         <Link
           href="/"
@@ -40,6 +40,11 @@ export default function Navbar() {
           <li>
             <Link href="/reservation" className="hover:text-gray-300">
               Reservation
+            </Link>
+          </li>{" "}
+          <li>
+            <Link href="/events" className="hover:text-gray-300">
+              Events
             </Link>
           </li>
           <li>
@@ -77,6 +82,11 @@ export default function Navbar() {
             <li>
               <Link href="/reservation" onClick={() => setIsOpen(false)}>
                 Reservation
+              </Link>
+            </li>
+            <li>
+              <Link href="/events" onClick={() => setIsOpen(false)}>
+                Events
               </Link>
             </li>
             <li>
