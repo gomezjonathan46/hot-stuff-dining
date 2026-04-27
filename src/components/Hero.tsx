@@ -1,19 +1,18 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[80vh] min-h-[500px]">
-      
+    <section className="relative w-full h-[80vh] min-h-125">
       {/* Background Image */}
       <Image
         src="/hero.jpg" // put this in /public
         alt="Restaurant ambiance"
         fill
         priority
-        className="object-cover"
+        className="object-cover font-display"
       />
 
       {/* Overlay */}
@@ -21,7 +20,6 @@ export default function Hero() {
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-        
         <h1 className="text-white text-4xl md:text-6xl font-bold mb-4">
           Hot Stuff Dining
         </h1>
@@ -45,7 +43,6 @@ export default function Hero() {
             Book a Table
           </Link>
         </div>
-
       </div>
     </section>
   );
