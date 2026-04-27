@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Hot Stuff Dining",
-  description: "Restaurant Landing Page",
+  description: "Hot Stuff Dining Landing Page",
 };
 
 export default function RootLayout({
