@@ -10,7 +10,7 @@ export default function Home() {
       <ImageTextSection
         title="Our Story"
         description="Hot Stuff Dining brings bold flavors and late-night comfort food."
-        imageSrc="/../src/assets/chef.jpg"
+        imageSrc="/chef.jpg"
       />
     </div>
   );
