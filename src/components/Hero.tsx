@@ -37,7 +37,7 @@ export default function Hero() {
           </Link>
 
           <Link
-            href="/booking"
+            href="/reservation"
             className="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-black transition"
           >
             Book a Table
