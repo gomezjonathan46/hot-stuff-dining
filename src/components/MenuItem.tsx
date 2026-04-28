@@ -17,7 +17,7 @@ export default function MenuItem({
     <div className="flex gap-4 border-b border-gray-200 pb-6">
 
       {/* Image */}
-      <div className="relative w-24 h-24 flex-shrink-0">
+      <div className="relative w-24 h-24 shrink-0">
         <Image
           src={image}
           alt={name}
