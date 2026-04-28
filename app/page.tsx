@@ -1,4 +1,6 @@
 import ImageTextSection from "../src/components/ImageTextSection";
+import Navbar from "../src/components/nav"
+import Hero from '../src/components/Hero';
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
         description="Hot Stuff Dining brings bold flavors and late-night comfort food."
         imageSrc="/../src/assets/chef.jpg"
       />
+      <Navbar/>
+      <Hero />
     </div>
   );
 }
