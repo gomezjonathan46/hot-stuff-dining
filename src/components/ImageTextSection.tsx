@@ -5,6 +5,7 @@ import Image from "next/image";
 type ImageTextSectionProps = {
   title: string;
   description: string;
+  author?: string;
   imageSrc: string;
   imageAlt?: string;
   imagePosition?: "left" | "right";
@@ -13,6 +14,7 @@ type ImageTextSectionProps = {
 export default function ImageTextSection({
   title,
   description,
+  author,
   imageSrc,
   imageAlt = "Section image",
   imagePosition = "left",
@@ -42,6 +44,7 @@ export default function ImageTextSection({
           <div className="bg-white text-black p-6 md:p-12 flex flex-col justify-center w-full">
             <h2 className="text-3xl font-display mb-4">{title}</h2>
             <p className="text-gray-700 leading-relaxed">{description}</p>
+            <p className="mt-4 font-medium">{author}</p>
           </div>
         </div>{" "}
       </div>

@@ -8,9 +8,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ImageTextSection
-        title="Our Story"
-        description="Hot Stuff Dining brings bold flavors and late-night comfort food."
+        title="Our Mission"
+        description='Every dish we serve is meant to feel bold, comforting, and a little unexpected. I built this menu to bring people together over flavors that stay with you long after the last bite.'
         imageSrc="/chef.jpg"
+        author="— Chef Marco Alvarez"
       />
     </div>
   );
