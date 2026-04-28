@@ -29,7 +29,7 @@ export default function ImageTextSection({
       >
         {/* Image */}
         <div className="w-full md:w-1/2">
-          <div className="relative w-full aspect-[4/3] md:aspect-auto md:h-full">
+          <div className="relative w-full aspect-4/3 md:aspect-auto md:h-full">
             <Image
               src={imageSrc}
               alt={imageAlt}
