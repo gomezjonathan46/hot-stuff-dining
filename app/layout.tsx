@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Playfair_Display, Inter } from 'next/font/google';
+import { Playfair_Display, Inter } from "next/font/google";
+import Navbar from "../src/components/nav";
 
 const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-display',
+  subsets: ["latin"],
+  variable: "--font-display",
 });
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-body',
+  subsets: ["latin"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,12 +1,10 @@
 import ImageTextSection from "../src/components/ImageTextSection";
-import Navbar from "../src/components/nav";
 import Hero from "../src/components/Hero";
 import HoursSection from "../src/components/HoursSection";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <Hero />
       <ImageTextSection
         title="Our Mission"
